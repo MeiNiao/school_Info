@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -21,12 +19,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="1500dp">
 
-                <ImageView
-                    android:id="@+id/iv_img"
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_img"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="180dp"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@mipmap/banner1" />-->
+
+                <com.allure.lbanners.LMBanners
+                    android:id="@+id/banners"
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:scaleType="centerCrop"
-                    android:src="@mipmap/banner1" />
+                    android:layout_height="@dimen/dimension_176_dp"
+                    app:canLoop="true"
+                    app:isVertical="false"
+                    app:auto_play="true"
+                    app:durtion="4000"
+                    app:scroll_duration="3000"
+                    app:indicator_select="@drawable/select"
+                    app:indicator_unselect="@drawable/unselect"
+                    app:horizontal_transitionEffect="zoom"
+                    app:indicator_position="bottom_mid">
+                </com.allure.lbanners.LMBanners>
+
             </FrameLayout>
         </FrameLayout>
     </ScrollView>
