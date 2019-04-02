@@ -29,14 +29,14 @@
                 <com.allure.lbanners.LMBanners
                     android:id="@+id/banners"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dimension_176_dp"
+                    android:layout_height="200dp"
                     app:canLoop="true"
                     app:isVertical="false"
                     app:auto_play="true"
                     app:durtion="4000"
                     app:scroll_duration="3000"
-                    app:indicator_select="@drawable/select"
-                    app:indicator_unselect="@drawable/unselect"
+                    app:indicator_select="@drawable/banner_select"
+                    app:indicator_unselect="@drawable/banner_unselect"
                     app:horizontal_transitionEffect="zoom"
                     app:indicator_position="bottom_mid">
                 </com.allure.lbanners.LMBanners>
