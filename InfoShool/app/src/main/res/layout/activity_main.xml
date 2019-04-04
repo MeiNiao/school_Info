@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.allure.lbanners.LMBanners
+        android:id="@+id/banners"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension_176_dp"
+        app:auto_play="true"
+        app:canLoop="true"
+        app:durtion="5000"
+        app:horizontal_transitionEffect="zoom"
+        app:indicator_position="bottom_mid"
+        app:indicator_select="@drawable/banner_select"
+        app:indicator_unselect="@drawable/banner_unselect"
+        app:isVertical="false"
+        app:scroll_duration="3000">
+
+    </com.allure.lbanners.LMBanners>
+
+
+
+</LinearLayout>
